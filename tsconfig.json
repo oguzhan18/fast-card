@@ -6,8 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "easycard": [
-        "dist/easycard"
+      "easylib": [
+        "dist/easylib"
       ]
     },
     "strict": true,

@@ -1,0 +1,12 @@
+<div class="card promoting-card" [style.width]="boxWidth" [style.border]="boxBorder">
+  <img class="card-img-top rounded-0" [src]="src" [alt]="altText" [style.width]="imageWidth"
+    *ngIf="imagePosition == 'up'" [title]="picTitile">
+  <div class="card-body d-flex flex-row">
+    <div>
+      <h4 class="card-title font-weight-bold mb-2">{{title}}</h4>
+      <p class="card-text" [ngStyle]="subFontStyles">{{subTitle}}</p>
+    </div>
+  </div>
+  <img class="card-img-top rounded-0" [src]="src" [alt]="altText" [style.width]="imageWidth"
+    *ngIf="imagePosition == 'down' ">
+</div>
