@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "easy-card": {
+    "pi-lab": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/easy-card",
+            "outputPath": "dist/pi-lab",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "easy-card:build:production"
+              "browserTarget": "pi-lab:build:production"
             },
             "development": {
-              "browserTarget": "easy-card:build:development"
+              "browserTarget": "pi-lab:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "easy-card:build"
+            "browserTarget": "pi-lab:build"
           }
         },
         "test": {
@@ -106,23 +106,23 @@
         }
       }
     },
-    "easylib": {
+    "pilab": {
       "projectType": "library",
-      "root": "projects/easylib",
-      "sourceRoot": "projects/easylib/src",
+      "root": "projects/pi-lab",
+      "sourceRoot": "projects/pi-lab/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/easylib/ng-package.json"
+            "project": "projects/pi-lab/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/easylib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/pi-lab/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/easylib/tsconfig.lib.json"
+              "tsConfig": "projects/pi-lab/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -130,9 +130,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/easylib/src/test.ts",
-            "tsConfig": "projects/easylib/tsconfig.spec.json",
-            "karmaConfig": "projects/easylib/karma.conf.js"
+            "main": "projects/pi-lab/src/test.ts",
+            "tsConfig": "projects/pi-lab/tsconfig.spec.json",
+            "karmaConfig": "projects/pi-lab/karma.conf.js"
           }
         }
       }

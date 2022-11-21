@@ -6,8 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "easylib": [
-        "dist/easylib"
+      "pilab": [
+        "dist/pilab"
       ]
     },
     "strict": true,

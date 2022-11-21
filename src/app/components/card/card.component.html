@@ -2,13 +2,17 @@
   title="title"
   subTitle="Card Sub Title"
   picTitile="Image Title"
+  titlePosition="up"
+  cardShadow="rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px"
   src="../../../assets/images/comp.jpg"
   altText="alt Text"
-  [boxWidth]="'10' + '%'"
+  [cardWidth]="'10' + '%'"
   [imageWidth]="'100' + '%'"
+  cardBorder="1px solid black"
   imagePosition="up"
-
-
+  ml="0"
+  imageURL="https://github.com"
+  imageTarget= "true"
   subFontFamily
   [subFontSize]="'20' + 'px'"
   subFontStyle="italic"
@@ -18,13 +22,21 @@
   subFontVariant="all-petite-caps"
   subFontKerning="normal"
   subFontShadow="2px 2px 5px red;"
+  titleAlign="center"
+  >
+</lib-basic-card>
 
+<!--
+  Title Font Properties
 
+  titleFontFamily
+  [titleFontSize]="'40' + 'px'"
+  titleFontStyle="italic"
+  titleFontWeight="bold"
+  titleFontColor="red"
+  titleFontBGcolor="blue"
+  titleFontVariant="all-petite-caps"
+  titleFontKerning="normal"
+  titleFontShadow="2px 2px 5px red;"
 
-
-
-
-
-  ></lib-basic-card>
-
-
+ -->
