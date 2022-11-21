@@ -7,11 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./basic-card.component.scss']
 })
 export class BasicCardComponent implements OnInit {
-
   cardStytles = {}
   subFontStyles = {};
   FontStyles = {};
-
 
   @Input() title: string = "";
   @Input() picTitile: string = "";
@@ -29,7 +27,6 @@ export class BasicCardComponent implements OnInit {
   @Input() cardmr: string = "";
   @Input() cardmt: string = "";
   @Input() cardmb: string = "";
-
   // SUB TEXT
   @Input() subFontFamily: string = "";
   @Input() subFontSize: string = "";
@@ -40,6 +37,7 @@ export class BasicCardComponent implements OnInit {
   @Input() subFontVariant: string = "";
   @Input() subFontKerning: string = "";
   @Input() subFontShadow: string = "";
+  @Input() sml: string = "";
 
   // TITLE TEXT
   @Input() titleFontFamily: string = "";
@@ -52,10 +50,7 @@ export class BasicCardComponent implements OnInit {
   @Input() titleFontKerning: string = "";
   @Input() titleFontShadow: string = "";
   @Input() titleAlign: string = "";
-  @Input() ml: string = "";
-
-
-
+  @Input() tml: string = "";
   // IMAGES
   @Input() imagePosition: string = "";
   @Input() imageURL: string = "";
@@ -74,7 +69,7 @@ export class BasicCardComponent implements OnInit {
       "text-shadow": this.subFontShadow,
       // Benzer
       "text-align": this.titleAlign,
-      "margin-left": this.ml,
+      "margin-left": this.sml,
     };
     this.FontStyles = {
       'fontFamily': this.titleFontFamily,
@@ -88,13 +83,13 @@ export class BasicCardComponent implements OnInit {
       "text-shadow": this.titleFontShadow,
       // Benzer
       "text-align": this.titleAlign,
-      "margin-left": this.ml,
+      "margin-left": this.tml,
     };
     this.cardStytles = {
       "margin-left": this.cardml,
-      "margin-right":this.cardmr,
-      "margin-top":this.cardmt,
-      "margin-bottom":this.cardmb,
+      "margin-right": this.cardmr,
+      "margin-top": this.cardmt,
+      "margin-bottom": this.cardmb,
     }
 
 

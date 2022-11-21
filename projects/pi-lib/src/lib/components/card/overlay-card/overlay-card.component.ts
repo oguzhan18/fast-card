@@ -7,24 +7,33 @@ import { Router } from '@angular/router';
   styleUrls: ['./overlay-card.component.scss']
 })
 export class OverlayCardComponent implements OnInit {
-
-
+  cardStytles = {}
   subFontStyles = {};
   FontStyles = {};
 
-
   @Input() title: string = "";
+  @Input() subTitle: string = "";
+
+
+  @Input() cardWidth: string = "";
+  @Input() cardHeight: string = "";
+  @Input() cardBorder: string = "";
+  @Input() cardSho: string = "";
+  @Input() cardShadow: string = "";
+  @Input() cardml: string = "";
+  @Input() cardmr: string = "";
+  @Input() cardmt: string = "";
+  @Input() cardmb: string = "";
+
+  // IMAGES
+  @Input() imagePosition: string = "";
+  @Input() imageURL: string = "";
+  @Input() imageTarget: string = "";
+  @Input() imageHeight: string = "";
+  @Input() imageWidth: string = "";
   @Input() picTitile: string = "";
   @Input() src: string = "";
   @Input() altText: string = "";
-  @Input() imageHeight: string = "";
-  @Input() imageWidth: string = "";
-  @Input() subTitle: string = "";
-  @Input() cardWidth: string = "";
-  @Input() cardBorder: string = "";
-  @Input() cardSho: string = "";
-  @Input() titlePosition: string = "";
-  @Input() cardShadow: string = "";
 
   // SUB TEXT
   @Input() subFontFamily: string = "";
@@ -36,6 +45,8 @@ export class OverlayCardComponent implements OnInit {
   @Input() subFontVariant: string = "";
   @Input() subFontKerning: string = "";
   @Input() subFontShadow: string = "";
+  @Input() subtitleAlign: string = ""
+  @Input() sml: string = "";
 
   // TITLE TEXT
   @Input() titleFontFamily: string = "";
@@ -48,14 +59,9 @@ export class OverlayCardComponent implements OnInit {
   @Input() titleFontKerning: string = "";
   @Input() titleFontShadow: string = "";
   @Input() titleAlign: string = "";
-  @Input() ml: string = "";
+  @Input() tml: string = "";
+  @Input() titlePosition: string = "";
 
-
-
-  // IMAGES
-  @Input() imagePosition: string = "";
-  @Input() imageURL: string = "";
-  @Input() imageTarget: string = "";
 
   ngOnInit() {
     this.subFontStyles = {
@@ -69,8 +75,8 @@ export class OverlayCardComponent implements OnInit {
       "font-kerning": this.subFontKerning,
       "text-shadow": this.subFontShadow,
       // Benzer
-      "text-align": this.titleAlign,
-      "margin-left": this.ml,
+      "text-align": this.subtitleAlign,
+      "margin-left": this.sml,
     };
     this.FontStyles = {
       'fontFamily': this.titleFontFamily,
@@ -84,7 +90,13 @@ export class OverlayCardComponent implements OnInit {
       "text-shadow": this.titleFontShadow,
       // Benzer
       "text-align": this.titleAlign,
-      "margin-left": this.ml,
+      "margin-left": this.tml,
+    };
+    this.cardStytles = {
+      "margin-left": this.cardml,
+      "margin-right": this.cardmr,
+      "margin-top": this.cardmt,
+      "margin-bottom": this.cardmb,
     }
 
 
@@ -102,7 +114,6 @@ export class OverlayCardComponent implements OnInit {
     }
   }
   constructor(private router: Router,) { }
-
 
 
 }
