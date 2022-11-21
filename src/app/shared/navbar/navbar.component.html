@@ -1,10 +1,37 @@
-<header class="header__navbar">
-  <div class="navbar">
-    <h1 class="navbar__logo"><a href="https://codepen.io/cryptoctopus/collections/popular/">NAVBAR</a></h1>
-    <ul class="navbar__links">
-      <li><a routerLink="card">Cards</a></li>
-      <li><a routerLink="text">Text</a></li>
-    </ul>
+<div class="s-layout">
+  <div class="s-layout__sidebar">
+    <a class="s-sidebar__trigger">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <nav class="s-sidebar__nav">
+      <ul>
+        <li>
+          <a class="s-sidebar__nav-link">
+            <i class="fa fa-home"></i><em>Home</em>
+          </a>
+        </li>
+        <li style="margin-left: 2em; list-style-type: none;">
+          <a>
+            Cards
+          </a>
+        </li>
+        <li style="margin-left: 4em; text-decoration: none; ">
+          <a routerLink="bcard">
+            Basic Card
+          </a>
+        </li>
+        <li style="margin-left: 4em; text-decoration: none; ">
+          <a routerLink="ocard">
+            Overlay Card
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-</header>
-<br><br><br>
+
+  <main class="s-layout__content">
+    <router-outlet></router-outlet>
+
+  </main>
+</div>

@@ -4,19 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CardModule } from 'projects/pilab/src/lib/components/card/basic-card/card.module';
+import { CardModule } from 'projects/pi-lib/src/lib/components/card/basic-card/card.module';
 import { TextProppertieComponent } from './components/text-proppertie/text-proppertie.component';
-import { CardComponent } from './components/card/card.component';
-import { ParagraphModule } from 'projects/pilab/src/lib/components/paragraph/paragraph.module';
+import { BCardComponent } from './components/card/bcard/bcard.component';
+import { ParagraphModule } from 'projects/pi-lib/src/lib/components/paragraph/paragraph.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { OverlayCardModule } from 'projects/pilab/src/public-api';
+import { OverlayCardModule } from 'projects/pi-lib/src/public-api';
+import { OcardComponent } from './components/card/ocard/ocard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextProppertieComponent,
-    CardComponent,
-    NavbarComponent
+    BCardComponent,
+    NavbarComponent,
+    OcardComponent
   ],
   imports: [
     BrowserModule,

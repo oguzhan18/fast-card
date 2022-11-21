@@ -6,8 +6,8 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "pilab": [
-        "dist/pilab"
+      "pilib": [
+        "dist/pi-lib"
       ]
     },
     "strict": true,

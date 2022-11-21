@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pi-lab": {
+    "pi-lib": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pi-lab",
+            "outputPath": "dist/pi-lib",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pi-lab:build:production"
+              "browserTarget": "pi-lib:build:production"
             },
             "development": {
-              "browserTarget": "pi-lab:build:development"
+              "browserTarget": "pi-lib:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pi-lab:build"
+            "browserTarget": "pi-lib:build"
           }
         },
         "test": {
@@ -106,23 +106,23 @@
         }
       }
     },
-    "pilab": {
+    "pilib": {
       "projectType": "library",
-      "root": "projects/pi-lab",
-      "sourceRoot": "projects/pi-lab/src",
+      "root": "projects/pi-lib",
+      "sourceRoot": "projects/pi-lib/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/pi-lab/ng-package.json"
+            "project": "projects/pi-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/pi-lab/tsconfig.lib.prod.json"
+              "tsConfig": "projects/pi-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/pi-lab/tsconfig.lib.json"
+              "tsConfig": "projects/pi-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -130,9 +130,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/pi-lab/src/test.ts",
-            "tsConfig": "projects/pi-lab/tsconfig.spec.json",
-            "karmaConfig": "projects/pi-lab/karma.conf.js"
+            "main": "projects/pi-lib/src/test.ts",
+            "tsConfig": "projects/pi-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/pi-lib/karma.conf.js"
           }
         }
       }

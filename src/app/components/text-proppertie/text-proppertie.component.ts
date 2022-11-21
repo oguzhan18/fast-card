@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TextProppertieComponent implements OnInit {
   title = 'Title';
   subTitle = 'Subtitle';
-  src = `../assets/images/comp.jpg`;
+  src = `../assets/images/pi-number-colourful.png`;
   imageWidth = `100`;
   altText = 'Card image 1';
   boxWidth = "30"
