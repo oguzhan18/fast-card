@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'pi-bcard',
+  selector: 'fc-bcard',
   templateUrl: './basic-card.component.html',
   styleUrls: ['./basic-card.component.scss']
 })

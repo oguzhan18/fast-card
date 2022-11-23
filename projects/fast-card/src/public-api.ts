@@ -1,5 +1,5 @@
 /*
- * Public API Surface of pi-lib
+ * Public API Surface of fast-card
  */
 
 // Basic Card
